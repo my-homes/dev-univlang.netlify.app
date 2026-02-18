@@ -25,4 +25,4 @@ git tag -a "$tag" -m"$tag"
 git push origin "$tag"
 git push origin HEAD:main
 git remote -v
-start https://app.netlify.com/projects/univlang/overview
+start https://app.netlify.com/projects/dev-univlang/overview
