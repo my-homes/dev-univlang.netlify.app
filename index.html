@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>dev-univlang.netlify.app 2026.0219.0735.24</h1>
+    <h1>dev-univlang.netlify.app 2026.0219.1711.51</h1>
 
     <style>
         .example {
@@ -26,7 +26,6 @@
     <p><button id="ajax005" class="example">Random Playlist #005</button></p>
     <p><button id="ajax010" class="example">Random Playlist #010</button></p>
     <p><button id="ajax050" class="example">Random Playlist #050</button></p>
-    <p><button id="ajax100" class="example">Random Playlist #100</button></p>
 
     <div id="overlay">
         <div class="cv-spinner">
@@ -55,9 +54,7 @@
             });
             function callAjax(len) {
                 $.ajax({
-                    //crossDomain: true,
-                    //url: 'https://script.google.com/macros/s/AKfycby3PLSwXczX9DhNcbhlEhdJ0_Qc_4KiOZ2zu1PgzoUV9IPod7uBX8miQquPrp0KVJfQ/exec',
-                    url: 'https://script.google.com/macros/s/AKfycbwJ2EZlK0OlyGiyffwXycXf6Na0sUTYYYD71SSPiUs/dev',
+                    url: 'https://script.google.com/macros/s/AKfycbwHju-2XfNWNLUFc9_s2uxmI483aoCOZFuyAp6zJ7Is5kwpRdSNgM4tt9XYthxcqItM/exec', //公開URL2
                     type: 'GET',
                     dataType: 'jsonp', // クロスドメイン制限を避けるため
                     data: { 'length': len }
@@ -86,9 +83,6 @@
             });
             $('#ajax050').on('click', function () {
                 callAjax(50);
-            });
-            $('#ajax100').on('click', function () {
-                callAjax(100);
             });
         });
     </script>
